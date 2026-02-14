@@ -14,6 +14,7 @@ LMU Broadcast Control is a WPF application designed for managing live timing, ov
 ## Requirements
 
 - Windows 10 or later.
+- [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime) (the installer will prompt you if it's missing).
 - Le Mans Ultimate installed and running locally.
 
 ## Timing Grid
