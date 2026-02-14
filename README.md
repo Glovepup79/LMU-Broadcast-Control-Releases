@@ -1,4 +1,4 @@
-> **Latest:** v0.1.2 • See releases for changelog
+> **Latest:** v0.1.3 • See releases for changelog
 
 # LMU Broadcast Control
 
@@ -34,7 +34,7 @@ LMU Broadcast Control is a WPF application designed for managing live timing, ov
 - SB – highlights the overall session best sector (purple). Class best lap highlighted in Best column.
 - Sectors slower than personal best are highlighted in orange.
 - Yellow flag highlighting – class bar flashes yellow when a car is slow on track, with linger and formation lap suppression.
-- VE/Fuel – virtual energy or fuel remaining as a colored progress bar.
+- Energy – virtual energy or fuel remaining as a colored progress bar.
     - VE classes show virtual energy from the strategy endpoint.
     - Non-VE classes (LMP2, etc.) show fuel from standings.
     - Color-coded: green (75%+), light green (50–75%), yellow (25–50%), orange (10–25%), red (<10%).
@@ -98,7 +98,7 @@ LMU Broadcast Control is a WPF application designed for managing live timing, ov
 - Staggered slide-in animation for results rows.
 - Track map overlay with class-coloured car dots and focused car highlighting.
 - Starting grid carousel: WEC-style overlay with configurable auto-cycle interval.
-- Tower field selector: Interval, Gap, Stops, Pos +/-, VE, Fuel with auto-cycle support.
+- Tower field selector: Interval, Gap, Stops, Pos +/-, Energy with auto-cycle support, configurable interval, and per-field rotation checkboxes. Settings persist per PC.
 - Toggle between driver name and team name.
 - Penalty badges show specific type (DT, SG, TIME).
 
