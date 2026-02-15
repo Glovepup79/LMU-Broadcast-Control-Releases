@@ -1,4 +1,4 @@
-> **Latest:** v0.1.3 • See releases for changelog
+> **Latest:** v0.1.4 • See releases for changelog
 
 # LMU Broadcast Control
 
@@ -53,7 +53,7 @@ LMU Broadcast Control is a WPF application designed for managing live timing, ov
 
 ## Overlay Controls
 
-- Hide in game panels.
+- Hide in game panels (middle mouse button in LMU).
 - Refresh Overlay.
 - Session Info – show or hide the session information overlay.
 - Full Course Yellow – toggle the Code80 flag.
@@ -95,6 +95,7 @@ LMU Broadcast Control is a WPF application designed for managing live timing, ov
 - Qualifying info panel with live lap timer, position, and real-time sector colour indicators (green = personal best, purple = class best, orange = slower).
 - Session results page — WEC-style classification table with pagination and class filtering.
 - Mid-race results — live classification table during race sessions.
+- Championship standings — load championship data from CSV, displayed as a WEC-style table with position, class bar, manufacturer logo, car number, driver, vehicle, and points. Supports multiple classes per CSV with per-class filtering.
 - 1-second fade transitions for all overlay elements.
 - Staggered slide-in animation for results rows.
 - Track map overlay with class-coloured car dots and focused car highlighting.
