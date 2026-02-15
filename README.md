@@ -1,4 +1,4 @@
-> **Latest:** v0.1.4 • See releases for changelog
+> **Latest:** v0.1.5 • See releases for changelog
 
 # LMU Broadcast Control
 
