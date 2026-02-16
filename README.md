@@ -1,5 +1,10 @@
-# LMU Broadcast Control — Releases
+# LMU Broadcast Control - Releases
 
-> **Latest:** [v0.1.7](https://github.com/Glovepup79/LMU-Broadcast-Control-Releases/releases/tag/v0.1.7)
+> **Latest:** v0.1.8
 
 Download the latest installer from the [Releases](https://github.com/Glovepup79/LMU-Broadcast-Control-Releases/releases) page.
+
+## Requirements
+- Windows 10 or later
+- [.NET 8 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0/runtime)
+- Le Mans Ultimate installed and running locally
