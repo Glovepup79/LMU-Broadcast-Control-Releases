@@ -1,6 +1,6 @@
-# LMU Broadcast Control - Releases
+# LMU Broadcast Control — Releases
 
-Latest version: **v0.2.1**
+> **Latest:** [v0.2.2](https://github.com/Glovepup79/LMU-Broadcast-Control-Releases/releases/tag/v0.2.2)
 
 Download the latest installer from the [Releases](https://github.com/Glovepup79/LMU-Broadcast-Control-Releases/releases) page.
 
