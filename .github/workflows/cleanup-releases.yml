@@ -1,0 +1,42 @@
+name: Cleanup old releases
+
+on:
+  schedule:
+    - cron: '0 3 * * 0'
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Delete releases older than 90 days
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const cutoff = Date.now() - 90 * 24 * 60 * 60 * 1000;
+            const releases = await github.paginate(github.rest.repos.listReleases, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+            });
+            for (const release of releases) {
+              const created = new Date(release.created_at).getTime();
+              if (created < cutoff) {
+                console.log(`Deleting ${release.tag_name} (created ${release.created_at})`);
+                await github.rest.repos.deleteRelease({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  release_id: release.id,
+                });
+                try {
+                  await github.rest.git.deleteRef({
+                    owner: context.repo.owner,
+                    repo: context.repo.repo,
+                    ref: `tags/${release.tag_name}`,
+                  });
+                } catch (e) {
+                  console.log(`Tag ${release.tag_name} already deleted or not found`);
+                }
+              }
+            }
